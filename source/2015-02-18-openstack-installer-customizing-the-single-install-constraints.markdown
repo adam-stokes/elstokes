@@ -6,13 +6,8 @@ title: 'OpenStack Installer: Customizing the Single Install constraints'
 author: Adam Stokes
 date: '2015-02-18 17:42:01 -0500'
 date_gmt: '2015-02-18 21:42:01 -0500'
-categories:
-- What's New
-- Ubuntu
-- Openstack
-- Installer
-- SUPER
-tags: []
+category: Ubuntu
+tags: openstack, juju, maas
 ---
 Sometimes our default constraints for a Single Installation isn't enough. With our latest release it is possible to now configure the service placements with custom constraints.
 

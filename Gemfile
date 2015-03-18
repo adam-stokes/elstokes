@@ -7,6 +7,10 @@ gem "bundler", '>= 1.8.4'
 gem "middleman", "~>3.3.10"
 gem "middleman-blog"
 gem "middleman-syntax"
+gem "middleman-disqus"
+gem "middleman-minify-html"
+gem "middleman-deploy"
+gem "middleman-imageoptim"
 gem "nokogiri"
 gem "slim"
 gem "redcarpet"
@@ -14,6 +18,7 @@ gem "rouge"
 gem "bourbon"
 gem "neat"
 gem "bitters"
+gem "builder"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', :require => false
