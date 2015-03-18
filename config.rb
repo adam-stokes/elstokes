@@ -43,7 +43,7 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 # blog
 activate :blog do |blog|
   blog.layout = "post.slim"
-  blog.permalink = "{title}/"
+  blog.permalink = "{title}/index.html"
 end
 
 # Automatic image dimensions on image_tag helper
