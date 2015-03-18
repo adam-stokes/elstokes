@@ -1,0 +1,19 @@
+---
+title: El Stokes
+layout: layout
+---
+
+<% blog.articles.each do |article| %>
+  <article class="type-system-sans">
+    <h2>
+      <a href="<%= article.url %>"><%= article.title %></a>
+    </h2>
+    <p class="date"><%= article.date.strftime('%b %e %Y') %></p>
+
+
+    <%= article.summary %>
+
+    <a href="<%= article.url %>" class="read-more">Read more</a>
+  </article>
+  <hr>
+<% end %>

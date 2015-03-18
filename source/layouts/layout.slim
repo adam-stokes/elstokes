@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    title= current_page.data.title || "The Middleman"
+    = stylesheet_link_tag "all"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600italic,600,700,700italic,900,300italic,300,200italic,200"
+    = javascript_include_tag  "all"
+  body class="#{page_classes}"
+    #article-wrapper
+      nav
+        ul
+          li= link_to "Adam Stokes", "index.html", :class => 'blog-title'
+      == yield
