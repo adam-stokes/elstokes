@@ -4,7 +4,7 @@ per_page: 4
 title: El Stokes
 layout: layout
 ---
-
+- content_for(:title, "El Stokes - a happy place")
 = partial "nav", :locals => { :paginate => paginate, :num_pages => num_pages, :prev_page => prev_page, :next_page => next_page}
 
 .ui.two.column.grid
