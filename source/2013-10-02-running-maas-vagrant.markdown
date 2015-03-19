@@ -14,11 +14,6 @@ wordpress_id: 276
 wordpress_url: http://astokes.org/?p=276
 date: '2013-10-02 13:29:54 -0400'
 date_gmt: '2013-10-02 17:29:54 -0400'
-categories:
-- Ubuntu
-- Software
-- maas
-- vagrant
 tags:
 - python
 - juju

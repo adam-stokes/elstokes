@@ -15,11 +15,11 @@ wordpress_url: http://beta.astokes.org/juju-end-to-end-deployment-apache2ssl-gun
 date: '2013-07-14 22:02:02 -0400'
 date_gmt: '2013-07-15 02:02:02 -0400'
 categories:
-- Ubuntu
+- ubuntu
 - Cloud
 - juju
 tags:
-- Ubuntu
+- ubuntu
 - linux
 - python
 - juju

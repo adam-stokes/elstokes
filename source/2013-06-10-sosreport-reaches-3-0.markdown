@@ -16,11 +16,11 @@ date: '2013-06-10 14:09:55 -0400'
 date_gmt: '2013-06-10 14:09:55 -0400'
 categories:
 - What's New
-- Ubuntu
+- ubuntu
 - Coder
 - python
 tags:
-- Ubuntu
+- ubuntu
 - linux
 - sosreport
 ---

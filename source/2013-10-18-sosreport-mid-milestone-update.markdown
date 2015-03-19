@@ -1,26 +1,9 @@
 ---
 layout: post
-status: publish
-published: true
 title: 'sosreport: mid-milestone update'
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 451
-wordpress_url: http://astokes.org/?p=451
-date: '2013-10-18 10:10:12 -0400'
-date_gmt: '2013-10-18 14:10:12 -0400'
-categories:
-- What's New
-- Ubuntu
-- python
-- sosreport
+date: 2013-10-18
 tags:
-- Ubuntu
+- ubuntu
 - python
 - sosreport
 ---

@@ -13,14 +13,8 @@ author_email: adam.stokes@gmail.com
 wordpress_id: 97
 wordpress_url: http://beta.astokes.org/python-salesforce-on-pypi/
 date: '2013-05-20 23:04:34 -0400'
-date_gmt: '2013-05-20 23:04:34 -0400'
-categories:
-- What's New
-- Ubuntu
-- Coder
-- python
 tags:
-- Ubuntu
+- ubuntu
 - linux
 - sosreport
 ---

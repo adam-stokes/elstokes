@@ -1,24 +1,9 @@
 ---
 layout: post
-status: publish
-published: true
 title: x230T, realtek wifi, and my solution
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 98
-wordpress_url: http://beta.astokes.org/x230t-realtek-wifi-and-my-solution/
 date: '2013-03-22 15:00:00 -0400'
-date_gmt: '2013-03-22 15:00:00 -0400'
-categories:
-- What's New
-- Ubuntu
 tags:
-- Ubuntu
+- ubuntu
 - linux
 - sosreport
 ---

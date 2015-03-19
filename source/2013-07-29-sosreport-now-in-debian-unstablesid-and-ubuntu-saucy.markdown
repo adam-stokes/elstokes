@@ -15,12 +15,12 @@ wordpress_url: http://beta.astokes.org/sosreport-now-in-debian-unstablesid-and-u
 date: '2013-07-29 13:16:07 -0400'
 date_gmt: '2013-07-29 13:16:07 -0400'
 categories:
-- Ubuntu
+- ubuntu
 - Coder
 - python
 - sosreport
 tags:
-- Ubuntu
+- ubuntu
 - linux
 - debian
 - sosreport

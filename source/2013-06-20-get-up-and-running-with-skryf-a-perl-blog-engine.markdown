@@ -1,23 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Get up and running with skryf a perl blog engine
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 91
-wordpress_url: http://beta.astokes.org/get-up-and-running-with-skryf-a-perl-blog-engine/
-date: '2013-06-20 00:42:11 -0400'
-date_gmt: '2013-06-20 00:42:11 -0400'
-categories:
-- What's New
-- Coder
-- perl
+date: 2013-06-20 00:42
 tags:
 - cms
 - blog

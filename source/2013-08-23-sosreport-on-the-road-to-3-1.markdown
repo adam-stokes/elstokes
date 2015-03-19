@@ -1,27 +1,9 @@
 ---
 layout: post
-status: publish
-published: true
 title: 'sosreport: on the road to 3.1'
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 84
-wordpress_url: http://beta.astokes.org/sosreport-on-the-road-to-3-1/
-date: '2013-08-23 18:17:58 -0400'
-date_gmt: '2013-08-23 18:17:58 -0400'
-categories:
-- What's New
-- Ubuntu
-- Coder
-- python
-- sosreport
+date: 2013-08-23 18:17 EDT
 tags:
-- Ubuntu
+- ubuntu
 - linux
 - sosreport
 ---

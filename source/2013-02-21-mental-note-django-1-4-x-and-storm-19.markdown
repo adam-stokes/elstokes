@@ -14,12 +14,7 @@ wordpress_id: 99
 wordpress_url: http://beta.astokes.org/mental-note-django-1-4-x-and-storm-19/
 date: '2013-02-21 15:00:00 -0500'
 date_gmt: '2013-02-21 15:00:00 -0500'
-categories:
-- What's New
-- Ubuntu
-- Coder
-- python
-tags: []
+tags: ubuntu
 ---
 <p>Some notes on getting Storm used as a database backend for Django. Props to James Henstridge for doing the heavy lifting.</p>
 <h3 id=&#34;setupvirtualenvandinstalldependencies:&#34;>Setup virtualenv and install dependencies:</h3>
