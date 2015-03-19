@@ -1,14 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Perl bindings for LeanKit.com
-author: Adam Stokes
-date: '2014-10-07 15:38:17 -0400'
-date_gmt: '2014-10-07 19:38:17 -0400'
-categories:
-- What's New
-- perl
+date: 2014-10-07 15:38
+featured: leankit.png
 tags:
 - api
 - json

@@ -1,10 +1,5 @@
 = wrap_layout :layout do
-    article.type-system-sans
-      h1= current_page.title
-      p.date= current_page.date.strftime('%b %e %Y')
-      p= current_page.body
-      hr
-      p.author Adam Stokes
-
-    = disqus
-    = disqus_count
+  = partial "post-header", locals: { page: current_page }
+  p= current_page.body
+  = disqus
+  = disqus_count

@@ -1,11 +1,9 @@
 ---
 layout: post
-status: publish
-published: true
 title: Ubuntu Openstack Installer
 author: Adam Stokes
-date: '2014-06-26 20:40:50 -0400'
-date_gmt: '2014-06-27 00:40:50 -0400'
+date: 2014-06-26 20:40 EDT
+featured: openstack.png
 tags: openstack, ubuntu
 ---
 As the title suggests this little gem is an OpenStack installer tailored specifically to get you from zero to hero in just a short amount of time.

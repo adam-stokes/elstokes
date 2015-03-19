@@ -1,19 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: SOSreport 3.1 released
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 499
-wordpress_url: http://astokes.org/?p=499
-date: '2014-01-31 13:32:41 -0500'
-date_gmt: '2014-01-31 17:32:41 -0500'
+date: 2014-01-31 13:32 EDT
+featured: sosreport.png
 tags: sosreport, ubuntu
 ---
 <p>Issues resolved in this release:</p>

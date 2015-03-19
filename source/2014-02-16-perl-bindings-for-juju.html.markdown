@@ -1,19 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Perl bindings for Juju
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 503
-wordpress_url: http://astokes.org/?p=503
-date: '2014-02-16 23:55:46 -0500'
-date_gmt: '2014-02-17 03:55:46 -0500'
+date: 2014-02-16 23:55 EDT
+featured: juju.svg
 tags: perl, juju, ubuntu
 ---
 In an attempt to better learn the Juju internals I started working on

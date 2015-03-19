@@ -2,7 +2,8 @@
 layout: post
 title: 'new juju plugin: juju-sos'
 author: Adam Stokes
-date: '2014-04-23 01:52:59 -0400'
+date: 2014-04-23 01:52 EDT
+featured: juju.svg
 tags: ubuntu, juju
 ---
 [Juju sos](https://github.com/battlemidget/juju-sos) is my entryway into Go code and the juju internals. This plugin will execute and pull [sosreports](https://github.com/sosreport/sos) from all machines known to juju or a specific machine of your choice and copy them locally on your machine.

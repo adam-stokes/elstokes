@@ -1,19 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Customizing fastpath (curtin) installations in MAAS
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 424
-wordpress_url: http://astokes.org/?p=424
-date: '2013-10-09 18:49:09 -0400'
-date_gmt: '2013-10-09 22:49:09 -0400'
+featured: maas.png
+date: 2013-10-09 18:49 EDT
 tags: python, fastpath, maas, curtin
 ---
 <p>Working off my previous entry about <strong><a href="http://astokes.org/using-fastpath-installer-maas/">using fastpath installer in MAAS</a></strong> I decided to dig a little deeper into customizing those installations a bit. One thing to note is <a href="http://launchpad.net/curtin">fastpath(curtin/curt installer)</a> installations do not follow the same guidelines that are used in preseed files for Debian installer. Some overview documentation of <a href="http://bazaar.launchpad.net/~curtin-dev/curtin/trunk/view/head:/doc/topics/overview.rst">fastpath can be located here</a> and thanks to <a href="http://ubuntu-smoser.blogspot.com/">Scott Moser</a> we were able to come up with the following example scenario.</p>

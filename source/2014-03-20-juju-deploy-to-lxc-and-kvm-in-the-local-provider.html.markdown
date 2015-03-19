@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 'juju: deploy to lxc AND kvm in the local provider'
-date: '2014-03-20 10:09:38 -0400'
+date: 2014-03-20 10:09 EDT
+featured: juju.svg
 tags: juju, ubuntu
 ---
 <p>While messing around with juju 1.18.x I managed to stumble across a setup that allows me to deploy both LXC and KVM containers in a single environment.</p>

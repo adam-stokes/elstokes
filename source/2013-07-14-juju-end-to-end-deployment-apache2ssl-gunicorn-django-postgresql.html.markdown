@@ -1,23 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
-title: 'Juju end to end deployment: Apache2+SSL, Gunicorn, Django, Postgresql'
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 88
-wordpress_url: http://beta.astokes.org/juju-end-to-end-deployment-apache2ssl-gunicorn-django-postgresql/
-date: '2013-07-14 22:02:02 -0400'
-date_gmt: '2013-07-15 02:02:02 -0400'
-categories:
-- ubuntu
-- Cloud
-- juju
+title: 'Juju deploy Apache2+SSL, Gunicorn, Django, Postgresql'
+date: 2013-07-14 22:02 EDT
+featured: juju.svg
 tags:
 - ubuntu
 - linux

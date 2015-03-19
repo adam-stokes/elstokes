@@ -11,6 +11,10 @@ layout: layout
   - page_articles.each_with_index do |article, i|
     .eight.wide.column
       .ui.raised.segment
+        - if article.data.featured
+          img.ui.rounded.centered.image src = image_path("post_headers/#{article.data.featured}")
+        - else
+          img.ui.rounded.centered.image src = image_path("post_headers/cloud.svg")
         p.date
           strong= article.date.strftime('%b %e %Y')
         a.ui.blue.ribbon.label href = article.url

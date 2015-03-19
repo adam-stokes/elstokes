@@ -1,19 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Using fastpath installer in MAAS
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 391
-wordpress_url: http://astokes.org/?p=391
-date: '2013-10-08 17:04:09 -0400'
-date_gmt: '2013-10-08 21:04:09 -0400'
+date: 2013-10-08 17:04 EDT
+featured: maas.png
 tags:
 - maas
 - fastpath

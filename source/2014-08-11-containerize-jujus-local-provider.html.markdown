@@ -1,11 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Containerize juju's local provider
-author: Adam Stokes
-date: '2014-08-11 19:05:40 -0400'
-date_gmt: '2014-08-11 23:05:40 -0400'
+date: 2014-08-11 19:05 EDT
+featured: juju.svg
 tags: ubuntu, openstack
 ---
 ## Current approach

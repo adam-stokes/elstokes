@@ -1,19 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Run MAAS in Vagrant
-author:
-  display_name: Adam Stokes
-  login: adam.stokes
-  email: adam.stokes@gmail.com
-  url: ''
-author_login: adam.stokes
-author_email: adam.stokes@gmail.com
-wordpress_id: 276
-wordpress_url: http://astokes.org/?p=276
-date: '2013-10-02 13:29:54 -0400'
-date_gmt: '2013-10-02 17:29:54 -0400'
+date: 2013-10-02 13:29 EDT
+featured: maas.png
 tags:
 - python
 - juju

@@ -1,6 +1,3 @@
-require 'slim'
-Slim::Engine.disable_option_validator!
-
 Time.zone = "US/Eastern"
 
 # Per-page layout changes:
@@ -30,6 +27,12 @@ helpers do
       "#{yield_content(:title)} - Adam Stokes"
     end
   end
+  def page_description
+    if content_for?(:description)
+      "#{yield_content(:description)}"
+    end
+  end
+
 end
 
 ready do
@@ -47,7 +50,7 @@ activate :directory_indexes
 # syntax
 activate :syntax, :line_numbers => true
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown, fenced_code_blocks: true, smartypants: true, autolink: true, with_toc_date: true, strikethrough: true, superscript: true
 
 # blog
 activate :blog do |blog|
@@ -79,6 +82,14 @@ end
 #     "Helping"
 #   end
 # end
+
+set :slim, {
+  :format => :html,
+  :indent => '  ',
+  :pretty => true,
+  :sort_attrs => false
+}
+::Slim::Engine.set_options locals: {}
 
 activate :imageoptim do |options|
   options.manifest = true
@@ -131,3 +142,12 @@ activate :deploy do |deploy|
   deploy.clean = true
   deploy.build_before = true
 end
+
+# set site configs
+set :site_description, 'Ubuntu, Code, OpenStack'
+set :site_author, 'Adam Stokes'
+set :social_links, {
+  twitter: 'https://twitter.com/battlemidget',
+  github: 'https://github.com/battelmidget',
+  linkedin: 'https://linkedin.com/stokachu'
+}
