@@ -1,16 +1,4 @@
 Time.zone = "US/Eastern"
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
 
 # Per-page layout changes:
 #
@@ -32,6 +20,13 @@ Time.zone = "US/Eastern"
 ###
 # Helpers
 ###
+helpers do
+  def page_title
+    if content_for?(:title)
+      "#{yield_content(:title)} - Adam Stokes"
+    end
+  end
+end
 
 ready do
   blog.tags.each do |tag, posts|
@@ -57,6 +52,9 @@ activate :blog do |blog|
   blog.paginate = true
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
+  blog.year_link = "blog/{year}.html"
+  blog.month_link = "blog/{year}/{month}.html"
+  blog.day_link = "blog/{year}/{month}/{day}.html"
 end
 
 activate :disqus do |d|
@@ -109,7 +107,7 @@ configure :build do
 
   # Minify html
   activate :minify_html
- 
+
   # Enable cache buster
   activate :asset_hash
 

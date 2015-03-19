@@ -15,13 +15,11 @@ gem "nokogiri"
 gem "slim"
 gem "redcarpet"
 gem "rouge"
-gem "bourbon"
-gem "neat"
-gem "bitters"
 gem "builder"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', :require => false
+  gem 'rails-assets-semantic-ui', :require => false
 end
 
 # Live-reloading plugin

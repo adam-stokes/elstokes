@@ -1,0 +1,16 @@
+@charset 'utf-8';
+@import 'highlight';
+
+.ui.padded.grid.header {
+    background: url(image_path('binding_dark.png')) top left repeat-x;
+    height: 175px;
+    padding-top: 25px;
+}
+
+.column.row.footer {
+    height: 200px;
+}
+
+pre {
+    font-family: "Ubuntu Mono", Monospace;
+}
