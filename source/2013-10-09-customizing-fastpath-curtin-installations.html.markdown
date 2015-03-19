@@ -110,12 +110,13 @@ iface vlan100 inet static
   address 192.168.66.118
   netmask 255.255.255.0
   vlan-raw-device eth0
+```
 
 ## Notes
 
-`curtin_userdata` is a YAML file so any thing that applies to the YAML
+***curtin_userdata*** is a YAML file so any thing that applies to the YAML
 1.2 specification should work here. For example, you'll notice
-`&myinterfaces` and `*myinterfaces`, these are node anchors more
+***&myinterfaces*** and __*myinterfaces__, these are node anchors more
 commonly called references for repeating YAML items. See
 [this wikipedia page](http://en.wikipedia.org/wiki/YAML#References)
 for more information and the
