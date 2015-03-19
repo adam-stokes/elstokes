@@ -1,3 +1,6 @@
+require 'slim'
+Slim::Engine.disable_option_validator!
+
 Time.zone = "US/Eastern"
 
 # Per-page layout changes:
@@ -30,7 +33,7 @@ end
 
 ready do
   blog.tags.each do |tag, posts|
-    proxy "/tags/#{tag.downcase}/feed.xml",
+    proxy "/tags/#{tag.downcase.tr(" ", "_")}/feed.xml",
           "/tag.xml",
           locals: { tag: tag, posts: posts },
           ignore: true,
@@ -89,6 +92,7 @@ activate :imageoptim do |options|
   options.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
   options.optipng   = { :level => 6, :interlace => false }
   options.pngcrush  = { :chunks => ['alla'], :fix => false, :brute => false }
+  options.pngout = false
 end
 
 set :css_dir, 'stylesheets'

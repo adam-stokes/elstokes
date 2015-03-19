@@ -14,12 +14,7 @@ wordpress_id: 499
 wordpress_url: http://astokes.org/?p=499
 date: '2014-01-31 13:32:41 -0500'
 date_gmt: '2014-01-31 17:32:41 -0500'
-categories:
-- What's New
-- Ubuntu
-- python
-- sosreport
-tags: []
+tags: sosreport, ubuntu
 ---
 <p>Issues resolved in this release:</p>
 <p><a href="https://github.com/sosreport/sosreport/issues?milestone=2&amp;state=closed">Closed items</a></p>

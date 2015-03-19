@@ -6,8 +6,7 @@ title: Ubuntu Openstack Installer
 author: Adam Stokes
 date: '2014-06-26 20:40:50 -0400'
 date_gmt: '2014-06-27 00:40:50 -0400'
-category: Ubuntu
-tags: openstack
+tags: openstack, ubuntu
 ---
 As the title suggests this little gem is an OpenStack installer tailored specifically to get you from zero to hero in just a short amount of time.
 

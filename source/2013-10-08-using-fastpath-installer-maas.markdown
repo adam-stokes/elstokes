@@ -14,12 +14,6 @@ wordpress_id: 391
 wordpress_url: http://astokes.org/?p=391
 date: '2013-10-08 17:04:09 -0400'
 date_gmt: '2013-10-08 21:04:09 -0400'
-categories:
-- What's New
-- Ubuntu
-- Cloud
-- maas
-- Installer
 tags:
 - maas
 - fastpath
