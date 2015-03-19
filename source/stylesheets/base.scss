@@ -22,10 +22,6 @@ html {
     font-size: 0.8em;
 }
 
-pre {
-    font-family: "Ubuntu Mono", Monospace;
-}
-
 p {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -38,4 +34,28 @@ h1, h2, h3, h4, h5 {
 
 .ui.label {
     font-size: 0.75em;
+}
+
+
+// pretty up syntax
+
+pre {
+    font-family: "Consolas", "Ubuntu Mono", Monospace;
+    font-size: 0.8em;
+}
+
+// highlight gutter
+
+.gl {
+  background: #333333;
+  border-right: 1px solid #999;
+  color: #999;
+
+  /* Stop line numbers being visually selected */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

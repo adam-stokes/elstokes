@@ -50,7 +50,7 @@ activate :directory_indexes
 # syntax
 activate :syntax, :line_numbers => true
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true, autolink: true, with_toc_date: true, strikethrough: true, superscript: true
+set :markdown, fenced_code_blocks: true, smartypants: true, autolink: true, with_toc_data: true, strikethrough: true, superscript: true
 
 # blog
 activate :blog do |blog|

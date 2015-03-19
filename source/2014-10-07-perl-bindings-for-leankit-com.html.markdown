@@ -16,7 +16,7 @@ This library can be installed from CPAN and supports Perl versions 5.14+:
 $ cpanm Net::LeanKit
 ```
 
-An example use of the library:
+### An example use of the library:
 
 ```perl
 use strict;

@@ -3,17 +3,19 @@ layout: post
 title: 'Customizing the Single Install constraints'
 date: 2015-02-18 11:42
 featured: openstack.png
-tags:
-- ubuntu
-- openstack
-- juju
+tags: ubuntu, openstack, juju
 ---
+
+# Overview
+
 Sometimes our default constraints for a Single Installation isn't
 enough. With our latest release it is possible to now configure the
 service placements with custom constraints.
 
 Below is a fully working config example that you can modify to suit
 your hardware:
+
+## Example
 
 ```yaml
 install_type: Single
@@ -71,7 +73,7 @@ Looking under the constraints for the **controller** you can expand on
 the disk storage, memory, and cpus that will be allocated to that
 service during deployment.
 
-To make use of this config run:
+### To make use of this config run:
 
 ```bash
 $ sudo openstack-install -c config.yaml
