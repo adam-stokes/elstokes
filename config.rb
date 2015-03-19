@@ -4,6 +4,7 @@ Slim::Engine.disable_option_validator!
 Time.zone = "US/Eastern"
 
 # Per-page layout changes:
+page "/sitemap.xml", :layout => false
 #
 # With no layout
 # page "/path/to/file.html", :layout => false
