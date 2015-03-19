@@ -89,23 +89,7 @@ set :slim, {
   :pretty => true,
   :sort_attrs => false
 }
-::Slim::Engine.set_options locals: {}
-
-activate :imageoptim do |options|
-  options.manifest = true
-  options.skip_missing_workers = true
-  options.verbose = false
-  options.nice = true
-  options.threads = true
-  options.image_extensions = %w(.png .jpg .gif)
-  options.advpng    = { :level => 4 }
-  options.gifsicle  = { :interlace => false }
-  options.jpegoptim = { :strip => ['all'], :max_quality => 100 }
-  options.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
-  options.optipng   = { :level => 6, :interlace => false }
-  options.pngcrush  = { :chunks => ['alla'], :fix => false, :brute => false }
-  options.pngout = false
-end
+::Slim::Engine.disable_option_validator!
 
 set :css_dir, 'stylesheets'
 
@@ -140,6 +124,7 @@ activate :deploy do |deploy|
   deploy.path = '/srv/blog'
   deploy.user = 'root'
   deploy.clean = true
+  deploy.flags = '-avz --chown=www-data:www-data'
   deploy.build_before = true
 end
 
