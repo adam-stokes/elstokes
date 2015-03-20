@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Customizing the Single Install constraints'
-date: 2015-02-18 11:42
+date: 2015-02-18 11:42 EDT
 featured: openstack.png
 tags: ubuntu, openstack, juju
 ---
