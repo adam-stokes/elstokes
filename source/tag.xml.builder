@@ -1,23 +1,19 @@
 xml.instruct!
-xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
-  site_url = "http://astokes.org/"
-  xml.title "Adam Stokes - #{tag.capitalize}"
-  xml.subtitle "Struck gold, spent it all on amazon, /me sad"
-  xml.id URI.join(site_url, tag_path(tag))
-  xml.link "href" => URI.join(site_url, tag_path(tag))
-  xml.link "href" => URI.join(site_url, current_page.path), "rel" => "self"
-  xml.updated(blog.articles.first.date.to_time.iso8601) unless blog.articles.empty?
-  xml.author { xml.name "Adam Stokes" }
+xml.rss :version => "2.0", "xmlns:atom" => "http://www.w3.org/2005/Atom" do
+  xml.channel do
+    site_url = "http://astokes.org/"
+    xml.title "Adam Stokes - #{tag.capitalize}"
+    xml.description "El Stokes."
+    xml.link URI.join(site_url, "tags", tag.downcase.tr(" ", "_"), "feed.xml")
 
-  posts.first(5).each do |article|
-    xml.entry do
-      xml.title article.title
-      xml.link "rel" => "alternate", "href" => URI.join(site_url, article.url)
-      xml.id URI.join(site_url, article.url)
-      xml.published article.date.to_time.iso8601
-      xml.updated File.mtime(article.source_file).iso8601
-      xml.author { xml.name "Adam Stokes" }
-      xml.content article.body, "type" => "html"
+    posts.first(5).each do |article|
+      xml.item do
+        xml.title article.title
+        xml.link URI.join(site_url, article.url)
+        xml.guid URI.join(site_url, article.url)
+        xml.pubDate Time.parse(article.date.to_s).rfc822()
+        xml.description article.body
+      end
     end
   end
 end
