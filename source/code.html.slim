@@ -1,65 +1,15 @@
 - content_for(:title, "Code")
 
-markdown:
-  # Code
-
-  ### Go
-
-  * [juju-sos][1] &#8211; Capture sosreports from machines in an juju environment.
-
-  ### Python
-
-  * [sosreport][2] &#8211; Systems/Infrastructure/Software data collector for aiding enterprise support professionals in replicating and tracking down inefficiencies.
-  * [Python-salesforce][3] A python client and authorization library for interfacing with Salesforce RESTful API.
-  * [CAS Project][4] **CAS** (core analysis system) provides support engineers with an automated way to take a kernel core dump and have a system provisioned and setup for the engineering team to analyze.
-  * [cage-cmf][5] A content management framework designed to primarily expose an object data mapper for mongo and allow clients to manage their content via JSON/REST service.
-  * [Ubuntu Openstack Installer][6] Ubuntu OpenStack Installer provides an extremely simple way to install, deploy and scale an OpenStack cloud on top of Ubuntu server and Juju.
-  * [macumba][7] A python 3 bindings for Juju API
-  * [maasclient][8] A python 3 bindings for MAAS API
-
-  ### Perl
-
-  * [Skryf][9] A perl blog/cms engine utilizing mojolicious, mongo, hypnotoad, ubic, and rex. 
-  * Core Plugins: Blog, Pluggable Admin
-  * [Net::OAuth::LP][10] A perl library for interfacing with [launchpad.net][11] over OAuth 1.0.
-  * [Net::Salesforce][12] A perl library for authenticating against Salesforce.com OAuth 2
-  * [Net::LeanKit ][13]Perl bindings to LeanKit.com
-  * [Kelp::Module::MongoDB][15] Interface with MongoDB through [Kelp][16]
-  * [Juju][19] Perl bindings for [Juju's API][20]
-  * [Other CPAN related modules][21]
-
-  #### Mojolicious Plugins
-
-  * [Mojolicious::Plugin::GoogleAnalytics][22]
-  * [Mojolicious::Plugin::Disqus::Tiny][23]
-  * [Mojolicious::Plugin::Leafletjs][24]
-
-  ### Ruby
-
-  * [Vagrant-sbuild][25] Vagrant project for spinning up sbuild environments for Debian packaging.
-
-  [1]: https://github.com/battlemidget/juju-sos
-  [2]: https://github.com/sosreport/sosreport
-  [3]: http://battlemidget.github.io/python-salesforce/
-  [4]: https://github.com/battlemidget/core-analysis-system
-  [5]: http://battlemidget.github.io/cage-cmf/
-  [6]: https://github.com/Ubuntu-Solutions-Engineering/cloud-installer
-  [7]: https://github.com/Ubuntu-Solutions-Engineering/macumba
-  [8]: https://github.com/Ubuntu-Solutions-Engineering/maasclient
-  [9]: https://github.com/skryf/Skryf
-  [10]: http://net.oauth.lp.astokes.org
-  [11]: https://api.launchpad.net
-  [12]: https://github.com/battlemidget/Net-Salesforce
-  [13]: https://github.com/battlemidget/p5-leankit
-  [14]: http://dtw.harness.astokes.org
-  [15]: http://kelp.module.mongodb.astokes.org
-  [16]: https://metacpan.org/release/Kelp
-  [17]: https://github.com/battlemidget/vimntu
-  [18]: /pages/vimntu
-  [19]: https://github.com/battlemidget/p5-juju
-  [20]: https://juju.ubuntu.com
-  [21]: https://metacpan.org/author/ADAMJS
-  [22]: https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics
-  [23]: https://github.com/battlemidget/Mojolicious-Plugin-Disqus-Tiny
-  [24]: https://github.com/battlemidget/Mojolicious-Plugin-Leafletjs
-  [25]: https://battlemidget.github.io/vagrant-sbuild
+h1 Code
+- data.code.each do |code, projects|
+  h2.ui.horizontal.header.divider
+    = code.capitalize
+  table.ui.striped.celled.compact.table
+    tbody
+      - projects.each do |p|
+        tr
+          td.four.wide
+            a.ui.fluid.red.labeled.icon.tiny.button href = "#{p.url}"
+              i.github.icon
+              = p.name
+          td.right.aligned= p.description

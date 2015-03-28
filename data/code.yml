@@ -1,0 +1,49 @@
+perl:
+- name: Juju
+  url: "https://github.com/battlemidget/p5-juju"
+  description: Juju API Client
+- name: Skryf
+  url: "https://github.com/skryf/Skryf"
+  description: A perl blog/cms engine utilizing mojolicious, mongo, hypnotoad, ubic, and rex.
+- name: Launchpad
+  url: "https://github.com/battlemidget/p5-net-launchpad"
+  description: A perl library for interfacing with launchpad.net.
+- name: Salesforce Authentication Library
+  url: "https://github.com/battlemidget/p5-net-salesforce"
+  description: Salesforce Authentication library
+- name: LeanKit API Client
+  url: "https://github.com/battlemidget/p5-leankit"
+  description: Leankit API client
+- name: Disqus
+  url: 'https://github.com/battlemidget/Mojolicious-Plugin-Disqus-Tiny'
+  description: Mojolicious plugin for Disqus
+- name: Google Analytics
+  url: "https://github.com/battlemidget/Mojolicious-Plugin-GoogleAnalytics"
+  description: Mojolicious plugin for Google Analytics
+ruby:
+- name: Vagrant sbuild
+  url: "https://github.com/battlemidget/vagrant-sbuild"
+  description: Vagrant plugin for spinning up sbuild environments for Debian/Ubuntu packaging.
+python:
+- name: OpenStack Installer
+  url: "https://github.com/Ubuntu-Solutions-Engineering/openstack-installer"
+  description: Ubuntu OpenStack Installer provides an extremely simple way to install, deploy and scale an OpenStack cloud on top of Ubuntu server and Juju.
+- name: Macumba
+  url: "https://github.com/Ubuntu-Solutions-Engineering/macumba"
+  description: Python 3 bindings for Juju API
+- name: Maasclient
+  url: "https://github.com/Ubuntu-Solutions-Engineering/maasclient"
+  description: Python 3 bindings for MAAS API
+- name: sosreport
+  url: "https://github.com/sosreport/sosreport"
+  description: Systems/Infrastructure/Software data collector for aiding enterprise support professionals in replicating and tracking down inefficiencies.
+- name: salesforce client
+  url: "https://github.com/battlemidget/python-salesforce"
+  description: A python client and authorization library for interfacing with Salesforce RESTful API.
+- name: Core Analysis System (CAS)
+  url: "https://github.com/battlemidget/core-analysis-system"
+  description: CAS provides support engineers with an automated way to take a kernel core dump and have a system provisioned and setup for the engineering team to analyze.
+go:
+- name: juju-sos
+  url: "https://github.com/battlemidget/juju-sos"
+  description: Plugin to capture sosreports from machines in an juju environment.

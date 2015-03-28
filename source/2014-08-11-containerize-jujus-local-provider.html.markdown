@@ -2,7 +2,7 @@
 layout: post
 title: Containerize juju's local provider
 date: 2014-08-11 19:05 EDT
-featured: juju.svg
+featured: juju.png
 tags: ubuntu, openstack
 ---
 ## Current approach

@@ -11,6 +11,10 @@ html {
     html { font-size: 13px; }
 }
 
+body {
+    background: url(image_path('image-background-2x.png')) repeat left top #f7f7f7;
+}
+
 .ui.padded.grid.header {
     background: url(image_path('binding_dark.png')) top left repeat-x;
     height: 175px;

@@ -1,5 +1,6 @@
 = wrap_layout :layout do
   = partial "post-header", locals: { page: current_page }
-  p= current_page.body
-  = disqus
-  = disqus_count
+  .ui.segment
+    = current_page.body
+    = disqus
+    = disqus_count

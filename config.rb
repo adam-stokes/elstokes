@@ -129,7 +129,7 @@ activate :deploy do |deploy|
 end
 
 # set site configs
-set :site_description, 'Ubuntu, Code, OpenStack'
+set :site_description, 'got lost in walmart, /me scared'
 set :site_author, 'Adam Stokes'
 set :social_links, {
   twitter: 'https://twitter.com/battlemidget',

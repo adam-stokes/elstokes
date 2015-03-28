@@ -1,10 +1,13 @@
 .ui.grid
   .two.wide.column
-    - if page.data.featured
-      img.ui.rounded.small.image src = image_path("post_headers/#{page.data.featured}")
-    - else
-      img.ui.rounded.small.image src = image_path("post_headers/cloud.svg")
-  .twelve.wide.column
-    h1= page.title
-  .two.wide.column
-    .ui.label= page.date.strftime('%b %e %Y')
+    .ui.raised.segment
+      - if page.data.featured
+        img.ui.rounded.small.image src = image_path("post_headers/#{page.data.featured}")
+      - else
+        img.ui.rounded.small.image src = image_path("post_headers/cloud.png")
+  .fourteen.wide.column
+    .ui.raised.segment
+      h2.ui.header= page.title
+      .ui.top.right.attached.black.label
+        i.clock.icon
+        = page.date.strftime('%b %e %Y')

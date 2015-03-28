@@ -5,27 +5,13 @@ per_page: 4
 
 - content_for(:title, "#{tagname.capitalize} Archives")
 
-h1.ui.header
+h1.ui.basic.segment.centered.header
   a href = "/tags/#{tagname}/feed.xml"
     i.rss.icon
   .content
     = tagname.capitalize
 
+= partial "article_list"
+
 = partial "nav", :locals => { :paginate => paginate, :num_pages => num_pages, :prev_page => prev_page, :next_page => next_page}
 
-.ui.two.column.grid
-  - page_articles.each_with_index do |article, i|
-    .eight.wide.column
-      .ui.raised.segment
-        - if article.data.featured
-          img.ui.rounded.centered.image src = image_path("post_headers/#{article.data.featured}")
-        - else
-          img.ui.rounded.centered.image src = image_path("post_headers/cloud.svg")
-        p.date
-          strong= article.date.strftime('%b %e %Y')
-        a.ui.blue.ribbon.label href = article.url
-          h5= article.title
-        p= article.summary
-
-      a.ui.button.item href = article.url
-        | Read More

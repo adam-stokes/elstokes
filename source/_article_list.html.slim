@@ -1,0 +1,20 @@
+.ui.grid
+  - page_articles.each_with_index do |article, i|
+    .three.wide.column
+        - if article.data.featured
+          img.ui.medium.rounded.image src = image_path("post_headers/#{article.data.featured}")
+        - else
+          img.ui.segment.image src = image_path("post_headers/cloud.png")
+    .thirteen.wide.column
+      .ui.stacked.black.segment
+        .ui.top.left.attached.black.label.date
+          i.clock.icon
+          strong= article.date.strftime('%b %e %Y')
+        a.ui.top.right.attached.red.label href = article.url
+          h4
+            i.circle.right.arrow.icon
+            = article.title
+            | ...
+        .ui.basic.segment
+          = article.summary
+

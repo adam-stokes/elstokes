@@ -1,10 +1,11 @@
-.ui.centered.padded.grid
-  - if paginate && num_pages > 1
-    .ui.buttons
-      - if prev_page
-        a.ui.button href=url_for(prev_page)
-          | Previous
-        .or
-      - if next_page
-        a.ui.button href=url_for(next_page)
-          | Next
+.ui.padded.grid
+  .column
+    - if paginate && num_pages > 1
+      .ui.buttons
+        - if prev_page
+          a.ui.primary.button href=url_for(prev_page)
+            | Previous
+          .or
+        - if next_page
+          a.ui.primary.button href=url_for(next_page)
+            | Next
