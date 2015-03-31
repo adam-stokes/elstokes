@@ -1,11 +1,11 @@
 .ui.grid
   .two.wide.column
+    .ui.top.left.attached.black.label
+      i.clock.icon
+      = page.date.strftime('%b %e %Y')
     - if page.data.featured
       img.ui.rounded.small.image src = image_path("post_headers/#{page.data.featured}")
     - else
       img.ui.rounded.small.image src = image_path("post_headers/cloud.png")
   .fourteen.wide.column
     h1.ui.header= page.title
-    .ui.top.right.attached.black.label
-      i.clock.icon
-      = page.date.strftime('%b %e %Y')
