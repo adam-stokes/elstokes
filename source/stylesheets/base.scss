@@ -3,6 +3,7 @@
 
 html {
     font-size: 17px;
+    height: 100%;
 }
 @media (max-width: 900px) {
     html { font-size: 15px; }
@@ -12,13 +13,15 @@ html {
 }
 
 body {
-    background: url(image_path('image-background-2x.png')) repeat left top #f7f7f7;
+//    background: url(image_path('image-background-2x.png')) repeat left top #f7f7f7;
+    background-color: #ffffff;
 }
 
 .ui.padded.grid.header {
-    background: url(image_path('binding_dark.png')) top left repeat-x;
-    height: 175px;
-    padding-top: 25px;
+    background: url(image_path('cover.jpg')) no-repeat center center;
+    background-size: cover;
+    height: 90%;
+    padding-top: 12%;
 }
 
 .column.row.footer {
@@ -51,9 +54,9 @@ pre {
 // highlight gutter
 
 .gl {
-  background: #333333;
-  border-right: 1px solid #999;
-  color: #999;
+  background: #f7f7f7;
+  border-right: 1px solid #e2e2e2;
+  color: #333;
 
   /* Stop line numbers being visually selected */
   -webkit-touch-callout: none;

@@ -1,6 +1,5 @@
 ---
-pageable: true
-per_page: 4
+layout: simple
 ---
 
 - content_for(:title, "#{tagname.capitalize} Archives")
@@ -12,6 +11,3 @@ h1.ui.basic.segment.centered.header
     = tagname.capitalize
 
 = partial "article_list"
-
-= partial "nav", :locals => { :paginate => paginate, :num_pages => num_pages, :prev_page => prev_page, :next_page => next_page}
-

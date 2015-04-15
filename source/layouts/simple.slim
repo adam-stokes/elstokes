@@ -16,11 +16,8 @@ html
         a.ui.labeled.icon.blue.button.item href = '/'
           i.arrow.left.icon
           | HOME
-      .eight.wide.column
     .ui.page.grid
       .sixteen.wide.column
         .ui.basic.segment
-          = partial "post-header", locals: { page: current_page }
-          = current_page.body
-          = disqus
-          = disqus_count
+          = yield
+    = partial "footer"

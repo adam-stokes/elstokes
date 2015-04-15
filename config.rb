@@ -56,7 +56,7 @@ set :markdown, fenced_code_blocks: true, smartypants: true, autolink: true, with
 activate :blog do |blog|
   blog.layout = "post.slim"
   blog.permalink = "/{title}/index.html"
-  blog.paginate = true
+  blog.paginate = false
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
   blog.year_link = "blog/{year}.html"

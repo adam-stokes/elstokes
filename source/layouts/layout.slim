@@ -14,28 +14,23 @@ html
     .ui.padded.grid.header
       .column
         .ui.page.grid
-          .two.wide.column
-            img.ui.rounded.image src = image_path('logo.png')
-          .fourteen.wide.column
-            .row
-              .ui.inverted.red.menu
-                a.item href = url_for('/index.html')
-                  i.home.icon
-                  | Home
-                a.item href = url_for('/tags/ubuntu.html')
-                  | Ubuntu
-                a.item href = url_for('/tags/juju.html')
-                  | Juju
-                a.item href = url_for('/tags/maas.html')
-                  | MaaS
-                a.item href = url_for('/tags/openstack.html')
-                  | OpenStack
-                .right.menu
-                  a.item href = url_for('/about-me')
-                    | About Me
-                  a.item href = url_for('/code')
-                    | Code
-
+          .sixteen.wide.column
+            h1.ui.centered.header Adam Stokes
+            img.ui.centered.rounded.bordered.image src = image_path('logo.png')
+            h1.ui.centered.header #{site_description}
+            .ui.fluid.six.item.borderless.menu
+              a.item href = url_for('/tags/ubuntu.html')
+                | Ubuntu
+              a.item href = url_for('/tags/juju.html')
+                | Juju
+              a.item href = url_for('/tags/maas.html')
+                | MaaS
+              a.item href = url_for('/tags/openstack.html')
+                | OpenStack
+              a.item href = url_for('/about-me')
+                | About Me
+              a.item href = url_for('/code')
+                | Code
     .ui.page.padded.grid
       .column
         == yield
