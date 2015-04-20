@@ -47,6 +47,7 @@ GEM
     i18n (0.7.0)
     json (1.8.2)
     kramdown (1.6.0)
+    libv8 (3.16.14.7)
     listen (2.9.0)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -108,6 +109,7 @@ GEM
     net-ssh (2.9.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    oj (2.12.2)
     padrino-helpers (0.12.5)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.12.5)
@@ -121,12 +123,13 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rails-assets-jquery (2.1.3)
-    rails-assets-semantic-ui (1.11.4)
+    rails-assets-semantic-ui (1.12.0)
       rails-assets-jquery (>= 1.8)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.2)
+    ref (1.0.5)
     rouge (1.8.0)
     sass (3.4.13)
     slim (3.0.3)
@@ -143,6 +146,9 @@ GEM
       sprockets (~> 2.0)
       tilt (~> 1.1)
     temple (0.7.5)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -169,10 +175,12 @@ DEPENDENCIES
   middleman-minify-html
   middleman-syntax
   nokogiri
+  oj
   rails-assets-jquery!
   rails-assets-semantic-ui!
   redcarpet
   rouge
   slim
+  therubyracer
   tzinfo-data
   wdm (~> 0.1.0)

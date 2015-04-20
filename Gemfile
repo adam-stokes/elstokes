@@ -15,6 +15,8 @@ gem "slim"
 gem "redcarpet"
 gem "rouge"
 gem "builder"
+gem "therubyracer"
+gem "oj"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', :require => false
