@@ -1,6 +1,6 @@
 ---
 title: Extending Juju, Plugin basics in Go
-date: 2015-04-21 22:52 EDT
+date: 2015-04-22 22:52 EDT
 featured: juju.png
 tags: [ubuntu, juju]
 ---
