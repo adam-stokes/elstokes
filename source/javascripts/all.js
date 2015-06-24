@@ -1,3 +1,3 @@
 //= require jquery
-//= require semantic-ui
+//= require semantic
 //= require_tree .

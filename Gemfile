@@ -20,7 +20,7 @@ gem "oj"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', :require => false
-  gem 'rails-assets-semantic-ui', :require => false
+  gem 'rails-assets-semantic', :require => false
 end
 
 # Live-reloading plugin
